@@ -6,10 +6,10 @@ public class Computer {
     private int ssd;
     private String cpu;
 
-    Computer() {
+    public Computer() {
     }
 
-    Computer(boolean multiMonitor, int ssd, String cpu) {
+    public Computer(boolean multiMonitor, int ssd, String cpu) {
         this.multiMonitor = multiMonitor;
         this.ssd = ssd;
         this.cpu = cpu;
