@@ -21,7 +21,7 @@ public class Calculator {
     }
 
     public int sumAllOperation(int y) {
-        return Calculator.sum(y) + multiply(y) + Calculator.minus(y) + divide(y);
+        return Calculator.sum(y) + Calculator.minus(y) + divide(y) + multiply(y);
     }
 
     public static void main(String[] args) {
