@@ -31,7 +31,7 @@ public class Calculator {
         int divideResult = calculator.divide(100);
         System.out.println(divideResult);
         System.out.println(Calculator.sum(10));
-        System.out.println(Calculator.minus(13));
+        System.out.println(Calculator.minus(28));
         int sumAllOperations = calculator.sumAllOperation(10);
         System.out.println(sumAllOperations);
     }
