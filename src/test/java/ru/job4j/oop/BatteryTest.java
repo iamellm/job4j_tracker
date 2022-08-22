@@ -7,8 +7,8 @@ public class BatteryTest {
 
     @Test
     public void whenThis30Another50ThenAnotherLoadEqual80() {
-        Battery charger = new Battery(30);
-        Battery another = new Battery(50);
+        Battery charger = new Battery(40);
+        Battery another = new Battery(40);
         charger.exchange(another);
         int expected = 80;
         assertThat(another.getLoad()).isEqualTo(expected);
