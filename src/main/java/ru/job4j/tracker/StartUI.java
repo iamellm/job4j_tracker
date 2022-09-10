@@ -40,7 +40,7 @@ public class StartUI {
         if (tracker.delete(id)) {
             System.out.println("Заявка успешно удалена.");
         } else {
-            System.out.println("Ошибка удаления заявка.");
+            System.out.println("Ошибка удаления заявки.");
         }
     }
 
