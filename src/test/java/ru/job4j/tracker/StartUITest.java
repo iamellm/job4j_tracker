@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class StartUITest {
 
-    @Test
+  /*  @Test
     public void whenCreateItem() {
         Input in = new StubInput(new String[] {"0", "Item name", "1"});
         Tracker tracker = new Tracker();
@@ -33,5 +33,17 @@ public class StartUITest {
         UserAction[] actions = {new DeleteAction(), new FinishAction()};
         new StartUI().init(in, tracker, actions);
         assertThat(tracker.findById(item.getId())).isNull();
+    }
+   */
+
+    @Test
+    public void whenExit() {
+        Output out = new StubOutput();
+        Input in = new StubInput(new String[] {"0"});
+        Tracker tracker = new Tracker();
+        UserAction[] actions = {new FinishAction()};
+        new StartUI(out).init(in, tracker, actions);
+        assertThat(out.toString()).isEqualTo("Menu:" + System.lineSeparator()
+                + "0. Close the program" + System.lineSeparator());
     }
 }
