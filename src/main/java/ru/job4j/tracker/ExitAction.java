@@ -1,9 +1,9 @@
 package ru.job4j.tracker;
 
-public class FinishAction implements UserAction {
+public class ExitAction implements UserAction {
     private final Output out;
 
-    public FinishAction(Output out) {
+    public ExitAction(Output out) {
         this.out = out;
     }
 
